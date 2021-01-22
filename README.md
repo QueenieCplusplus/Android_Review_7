@@ -92,7 +92,7 @@ Menu, Toast, Exception Handler
        <?xml encoding="utf-8">
        <menu>
           <item
-              android:id="@+id/shareMenuButton"
+              android:id="@+id/showMenuTouch"
               android:icon="?android:attr/actionModeShareDrawable"
               android:visible="true"
               andrdoid:enable="true"
@@ -207,12 +207,23 @@ Menu, Toast, Exception Handler
             // Items to be selected
             override fun onOptionsItemSelected(item: MenuItem): Boolean {
             
+               // lambda
+               // (itemId) -> {body}
+               // {itemId -> body}
+               when(item.itemId){
+                   R,id.showMenuTouch -> showGarmin()
+               }
                return super.onOptionsItemSelected(item)
             
             }
             
             // TODO
             // Exception Handler
+            private fun showGarmin() {
+            
+                 
+            
+            }
                    
        
        }
