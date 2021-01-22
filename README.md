@@ -29,6 +29,14 @@ Menu, Toast, Exception Handler
               app:layout_constaintGuide_end="@dimen/default_spacing"
            />
            
+           <TextView
+              android:id="@+id/price"
+           />
+           
+           <TextView
+              android:id="@+id/volume"
+           />
+           
            <ImageButton
               android:id="imgB"
               android:scaleType="centerCrop"
