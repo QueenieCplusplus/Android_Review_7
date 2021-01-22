@@ -2,33 +2,7 @@
 Menu, Toast, Exception Handler
 
 
-# Android_Review_6
-Logcat &amp; Lifecycle
-
-1. Lifecycle in Android System.
-
-       onCreate(savedInstanceState: Bundle?){
-          super.onCreate(saveInstanceSate)
-       }
-       
-       onStart()
-       
-       onResume()
-       
-       onPause()
-       
-       onStop()
-       
-       onDestroy()
-       
-       onRestart()
-       
-       // called when the user navigates away from the app but might come back 
-       onSaveInstanceSate(outSate: Bundle){
-           super.onSaveInstanceStae(outState)
-       }
-
-2. design layout with UI element. And add on Guideline to make a space between ImageView & ImageButton.
+1. design layout with UI element. And add on Guideline to make a space between ImageView & ImageButton.
 
        //activity_main.xml
        
@@ -65,7 +39,7 @@ Logcat &amp; Lifecycle
        
        </layout>
        
-3. define dimens.
+2. define dimens.
 
           // go to app/src/main/res/values/dimens.xml
           
@@ -75,7 +49,7 @@ Logcat &amp; Lifecycle
               <dimen name="default_spacing"> 16dp </dimen>
           </resources>
 
-4. define customed color.
+3. define customed color.
 
            // go to app/src/main/res/values/colors.xml
            
@@ -89,9 +63,9 @@ Logcat &amp; Lifecycle
               
            </resources>
 
-5. define resorces in app/src/main/res/drawable.
+4. define resorces in app/src/main/res/drawable.
 
-6. design menu resource.
+5. design menu resource.
 
        // go to app/src/main/res/menu
        // main_menu.xml
@@ -107,7 +81,7 @@ Logcat &amp; Lifecycle
           />
        </menu>
 
-7. source line of code.
+6. source line of code.
 
        package com.example.android.katesapp
        
