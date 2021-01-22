@@ -113,8 +113,14 @@ Menu, Toast, Exception Handler
        
        class MainActivity: AppCompatActivity(){
        
-       
+          
+            private var price = 0
+            
+            private var volume = 0
+            
             private lateinit var binding: ActivityMainBinding
+            
+            data class garminWatchToBuy(val)
             
             // TODO
             / /Data Class
