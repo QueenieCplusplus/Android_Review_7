@@ -125,26 +125,64 @@ Menu, Toast, Exception Handler
        class MainActivity: AppCompatActivity(){
        
           
+            // 類別中的共用變數
             private var price = 0
-            
             private var volume = 0
-            
             private lateinit var binding: ActivityMainBinding
             
+            
+            // 製作資料型別
             data class garminWatchToBuy(val)
             
-            // TODO
+            // create a Data Type
             // Data Class
             // it includes the resource id.
-            data class garmin3C()
+            data class garmin3C(val imgId: Int, val price: Int, val volumn: Int)
+            
+            // 建立集合裝載資料型別的成員
+            // create a List
+            // 拆解集合為成員
+            private val allGarmin3C = listOf(
+            
+               garmin3C(R.drawable.watchA, 6990, 5),
+               garmin3C(R.drawable.watchB, 7990, 15),
+               garmin3C(R.drawable.watchC, 19900, 20)
+            
+            
+            )
+            
+            
+            // 提取集合中的成員，成員有 id、價格、數量等屬性
+            private var currentWatch = allGarmin[0]
        
             override fun onCreate(savedInstanceState: Bundle?){
+            
                  super.onCreate(savedInstanceState)
+                 
+                 // 綁定 UI 元件
+                 binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+                 
+                 // 顯示 UI 元件
+                 binding.imgB.setOnClickListner {
+                     clickHandler()
+                 }
+                 
+                 binding.imgB.setImageResource(currentWatch.imgId)
+                 
+                 binding.price = price
+                 binding.volumn = volumn
            
                  
             }
-       
-       
+            
+            private fun clickHandler() {
+               
+               // update value of volumn when user click on the button to demonstrate he/she wanna buy it
+               volumn--
+            
+            
+            }
+      
        
        }
        
