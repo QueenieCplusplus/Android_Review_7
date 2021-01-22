@@ -11,6 +11,17 @@ Menu, Toast, Exception Handler
        <layout>
        
            <data>
+           
+               <variable
+                  name="price"
+                  type="Integer"
+               />
+               
+               <variable
+                   name="volume"
+                   type="Integer"
+               />
+               
            </data>
            
            <androidx.constraintlayout.widget.ConstraintLayout
