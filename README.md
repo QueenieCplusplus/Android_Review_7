@@ -195,7 +195,25 @@ Menu, Toast, Exception Handler
             
             
             } 
-      
+            
+            // Menu to be inflated
+            override fun onCreateOptionsMenu(menu: Menu): Boolean {
+            
+               menuInflater.inflate(R.menu.main_menu, menu)
+               return super.onCreateOptionsMenu(menu)
+               
+            }
+            
+            // Items to be selected
+            override fun onOptionsItemSelected(item: MenuItem): Boolean {
+            
+               return super.onOptionsItemSelected(item)
+            
+            }
+            
+            // TODO
+            // Exception Handler
+                   
        
        }
        
