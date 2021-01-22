@@ -108,7 +108,8 @@ Menu, Toast, Exception Handler
        
             private lateinit var binding: ActivityMainBinding
             
-            //Data Class
+            // TODO
+            / /Data Class
        
             override fun onCreate(savedInstanceState: Bundle?){
                  super.onCreate(savedInstanceState)
