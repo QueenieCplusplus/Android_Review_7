@@ -164,7 +164,7 @@ Menu, Toast, Exception Handler
                  
                  // 顯示 UI 元件
                  binding.imgB.setOnClickListner {
-                     clickHandler()
+                     clickBuyHandler()
                  }
                  
                  binding.imgB.setImageResource(currentWatch.imgId)
@@ -175,13 +175,26 @@ Menu, Toast, Exception Handler
                  
             }
             
-            private fun clickHandler() {
+            private fun clickBuyHandler() {
                
                // update value of volumn when user click on the button to demonstrate he/she wanna buy it
-               volumn--
+               volumnAfterBuy--
+               
+               binding.volumn = volumnAfterBuy
+               
+               showOtherWatch()
             
             
             }
+            
+            private fun showOtherWatch() {
+            
+                 // TODO
+                 // for-in loop
+                 // use the data class called allGraminWatch 
+            
+            
+            } 
       
        
        }
