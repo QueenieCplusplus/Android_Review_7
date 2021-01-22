@@ -221,7 +221,19 @@ Menu, Toast, Exception Handler
             // Exception Handler
             private fun showGarmin() {
             
+            
+                 // wait to define
+                 val showIntent = 
                  
+                 try {
+                 
+                     showIntent()
+                 
+                 } catch(ex: ActivityNotFoundException) {
+                 
+                     Toast.makeText(this, getString(), Toast.LENGTH_LONG).show()
+                 
+                 }
             
             }
                    
