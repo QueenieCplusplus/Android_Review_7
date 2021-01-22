@@ -240,3 +240,6 @@ Menu, Toast, Exception Handler
        
        }
        
+7. today's tip (lateinit and lazy)
+
+   https://medium.com/@yongjhih/lateinit-與-lazy-使用時機-kotlin-53daf0affee4
