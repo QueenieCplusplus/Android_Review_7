@@ -123,7 +123,9 @@ Menu, Toast, Exception Handler
             data class garminWatchToBuy(val)
             
             // TODO
-            / /Data Class
+            // Data Class
+            // it includes the resource id.
+            data class garmin3C()
        
             override fun onCreate(savedInstanceState: Bundle?){
                  super.onCreate(savedInstanceState)
