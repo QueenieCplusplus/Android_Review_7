@@ -232,7 +232,8 @@ Menu, Toast, Exception Handler
                  
                  } catch(ex: ActivityNotFoundException) {
                  
-                     Toast.makeText(this, getString(), Toast.LENGTH_LONG).show()
+                     // quesion on R.string.sharing_not_available
+                     Toast.makeText(this, getString(R.string.sharing_not_available), Toast.LENGTH_LONG).show()
                  
                  }
             
