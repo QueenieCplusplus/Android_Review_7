@@ -235,6 +235,8 @@ Menu, Toast, Exception Handler
             
             
                  // wait to define
+                 // see Android_Review_8
+                 // to import core module to call the Intent Builder constructor
                  val showIntent = 
                  
                  try {
