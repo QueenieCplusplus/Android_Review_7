@@ -227,7 +227,8 @@ Menu, Toast, Exception Handler
                  
                  try {
                  
-                     showIntent()
+                     // to start an Avtivity to show the intent to render plain text
+                     // see Android_Review_8
                  
                  } catch(ex: ActivityNotFoundException) {
                  
