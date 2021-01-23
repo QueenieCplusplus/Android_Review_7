@@ -144,7 +144,7 @@ Menu, Toast, Exception Handler
             
             
             // 製作資料型別
-            data class garminWatchToBuy(val)
+            // data class garminWatchToBuy()
             
             // create a Data Type
             // Data Class
