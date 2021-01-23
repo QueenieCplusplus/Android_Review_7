@@ -179,7 +179,7 @@ Menu, Toast, Exception Handler
                      clickBuyHandler()
                  }
                  
-                 binding.imgB.setImageResource(currentWatch.imgId)
+                 binding.img.setImageResource(currentWatch.imgId)
                  
                  binding.price = price
                  binding.volumn = volumn
