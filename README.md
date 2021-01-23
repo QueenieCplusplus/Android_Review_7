@@ -144,7 +144,6 @@ Menu, Toast, Exception Handler
             
             
             // 製作資料型別
-            // data class garminWatchToBuy()
             
             // create a Data Type
             // Data Class
@@ -165,7 +164,7 @@ Menu, Toast, Exception Handler
             
             
             // 提取集合中的成員，成員有 id、價格、數量等屬性
-            private var currentWatch = allGarmin[0]
+            private var currentWatch = allGarmin3C[0]
        
             override fun onCreate(savedInstanceState: Bundle?){
             
@@ -180,6 +179,7 @@ Menu, Toast, Exception Handler
                  }
                  
                  binding.img.setImageResource(currentWatch.imgId)
+                 binding.imgB.setImageResource(R.id.gotobuy)
                  
                  binding.price = price
                  binding.volumn = volumn
@@ -201,10 +201,26 @@ Menu, Toast, Exception Handler
             
             private fun showOtherWatch() {
             
-                 // TODO
-                 // for-in loop
                  // use the data class called allGraminWatch 
-            
+                 var newWatch = allGarmin3C[0]
+                 
+                 for (watch in allGarmin3C){
+                 
+                      // TODO: an inspection flow
+                     if(){
+                        newWatch = watch
+                     }
+                 
+                 }
+                 
+                 // update image
+                 // inspection control flow
+                 if(currentWatch != newWatch){
+                 
+                     currentWatch = newWatch
+                     biding.img.setImageResource(newWatch.imageId)
+                 
+                 }
             
             } 
             
@@ -229,7 +245,6 @@ Menu, Toast, Exception Handler
             
             }
             
-            // TODO
             // Exception Handler
             private fun showGarmin() {
             
