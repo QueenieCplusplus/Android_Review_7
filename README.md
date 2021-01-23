@@ -99,8 +99,20 @@ Menu, Toast, Exception Handler
               android:showAsAction="ifRoom"
           />
        </menu>
+       
+6. to create a R.string which is located in file called string.xml under dir res/values/.
 
-6. source line of code.
+       <resources>
+           <string name="app_name">Dessert Clicker</string>
+           <string name="dollar_sign">$</string>
+           <string name="zero">0</string>
+           <string name="dessert_sold">Desserts Sold</string>
+           <string name="share_text">I\'ve clicked %1$d Desserts for a total of %2$d$ #AndroidDessertClicker</string>
+           <string name="share">Share</string>
+           <string name="sharing_not_available">Sharing Not Available</string>
+       </resources>
+
+7. source line of code.
 
        package com.example.android.katesapp
        
@@ -232,7 +244,7 @@ Menu, Toast, Exception Handler
                  
                  } catch(ex: ActivityNotFoundException) {
                  
-                     // quesion on R.string.sharing_not_available
+                      // R.string path see app/src/main/res/values/strings.xml
                      Toast.makeText(this, getString(R.string.sharing_not_available), Toast.LENGTH_LONG).show()
                  
                  }
@@ -242,7 +254,7 @@ Menu, Toast, Exception Handler
        
        }
        
-7. today's tip (lateinit and lazy)
+8. today's tip (lateinit and lazy)
 
    https://medium.com/@carterchen247/kotlin使用心得-十一-lateinit-vs-lazy-1ef96bc5b3b3
 
